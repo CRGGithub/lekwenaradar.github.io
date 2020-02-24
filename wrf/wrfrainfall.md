@@ -1,0 +1,18 @@
+<h1>WRF Accumulated Precipitation</h1>
+<p>Drag the slider to change the time</p>
+
+<div class="slidecontainer">
+<input oninput='setImage(this)' class="slider" type="range" min="0" max="0" value="0" step="1" />
+<img id='img'/>
+</div>
+
+<script>
+var img = document.getElementById('img');
+var img_array = [];
+function setImage(obj)
+{
+        var value = obj.value;
+        img.src = img_array[value];
+
+}
+</script>
