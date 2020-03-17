@@ -2,13 +2,19 @@
 <p>Drag the slider to change the time</p>
 
 <div class="slidecontainer">
-<input oninput='setImage(this)' class="slider" type="range" min="0" max="1" value="0" step="1" />
+<input oninput='setImage(this)' class="slider" type="range" min="0" max="7" value="0" step="1" />
 <img id='img'/>
 </div>
 
 <script>
 var img = document.getElementById('img');
-var img_array = ['/assets/images/wrf/r_wrfout_d01_2020-03-16_12:00:00.png',];
+var img_array = ['/assets/images/wrf/r_wrfout_d01_2020-03-17_12:00:00.png',
+'/assets/images/wrf/r_wrfout_d01_2020-03-17_13:00:00.png',
+'/assets/images/wrf/r_wrfout_d01_2020-03-17_14:00:00.png',
+'/assets/images/wrf/r_wrfout_d01_2020-03-17_15:00:00.png',
+'/assets/images/wrf/r_wrfout_d01_2020-03-17_16:00:00.png',
+'/assets/images/wrf/r_wrfout_d01_2020-03-17_17:00:00.png',
+'/assets/images/wrf/r_wrfout_d01_2020-03-17_18:00:00.png',];
 function setImage(obj)
 {
         var value = obj.value;
