@@ -2,37 +2,13 @@
 <p>Drag the slider to change the time</p>
 
 <div class="slidecontainer">
-<input oninput='setImage(this)' class="slider" type="range" min="0" max="49" value="0" step="1" />
+<input oninput='setImage(this)' class="slider" type="range" min="0" max="15" value="0" step="1" />
 <img id='img'/>
 </div>
 
 <script>
 var img = document.getElementById('img');
-var img_array = ['/assets/images/wrf/t_wrfout_d01_2020-03-18_12:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-18_13:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-18_14:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-18_15:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-18_16:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-18_17:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-18_18:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-18_19:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-18_20:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-18_21:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-18_22:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-18_23:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-19_00:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-19_01:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-19_02:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-19_03:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-19_04:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-19_05:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-19_06:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-19_07:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-19_08:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-19_09:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-19_10:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-19_11:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-19_12:00:00.png',
+var img_array = ['/assets/images/wrf/t_wrfout_d01_2020-03-19_12:00:00.png',
 '/assets/images/wrf/t_wrfout_d01_2020-03-19_13:00:00.png',
 '/assets/images/wrf/t_wrfout_d01_2020-03-19_14:00:00.png',
 '/assets/images/wrf/t_wrfout_d01_2020-03-19_15:00:00.png',
@@ -46,17 +22,7 @@ var img_array = ['/assets/images/wrf/t_wrfout_d01_2020-03-18_12:00:00.png',
 '/assets/images/wrf/t_wrfout_d01_2020-03-19_23:00:00.png',
 '/assets/images/wrf/t_wrfout_d01_2020-03-20_00:00:00.png',
 '/assets/images/wrf/t_wrfout_d01_2020-03-20_01:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-20_02:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-20_03:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-20_04:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-20_05:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-20_06:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-20_07:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-20_08:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-20_09:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-20_10:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-20_11:00:00.png',
-'/assets/images/wrf/t_wrfout_d01_2020-03-20_12:00:00.png',];
+'/assets/images/wrf/t_wrfout_d01_2020-03-20_02:00:00.png',];
 function setImage(obj)
 {
         var value = obj.value;
