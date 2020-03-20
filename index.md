@@ -48,8 +48,6 @@ The current UTC time is:
 
 ---
 
-![radar_image](https://raw.githubusercontent.com/CRGGithub/crggithub.github.io/master/assets/images/radar/cappi.gif)
-
 # Disclaimer
 The NWU-Lekwena Radar and The NWU-WRF is a test bed for students to learn and
 develop creative solutions related to weather forecasting and now-casting. This
