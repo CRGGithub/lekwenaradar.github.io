@@ -8,13 +8,13 @@
 
 <script>
 var img = document.getElementById('img');
-var img_array = ['/assets/images/wrf/lc_wrfout_d01_2020-04-10_12:00:00.png',
-'/assets/images/wrf/lc_wrfout_d01_2020-04-10_13:00:00.png',
-'/assets/images/wrf/lc_wrfout_d01_2020-04-10_14:00:00.png',
-'/assets/images/wrf/lc_wrfout_d01_2020-04-10_15:00:00.png',
-'/assets/images/wrf/lc_wrfout_d01_2020-04-10_16:00:00.png',
-'/assets/images/wrf/lc_wrfout_d01_2020-04-10_17:00:00.png',
-'/assets/images/wrf/lc_wrfout_d01_2020-04-10_18:00:00.png',];
+var img_array = ['/assets/images/wrf/lc_wrfout_d01_2020-04-11_12:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-04-11_13:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-04-11_14:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-04-11_15:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-04-11_16:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-04-11_17:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-04-11_18:00:00.png',];
 function setImage(obj)
 {
         var value = obj.value;
