@@ -64,15 +64,13 @@ Click links to expand
 <p>Drag the slider to change the time</p>
 
 <div class="slidecontainer">
-<input oninput='setImage(this)' class="slider" type="range" min="0" max="3" value="0" step="1" />
+<input oninput='setImage(this)' class="slider" type="range" min="0" max="0" value="0" step="1" />
 <img id='img'/>
 </div>
 
 <script>
 var img = document.getElementById('img');
-var img_array = ['/assets/images/wrf/cp_wrfout_d01_2020-04-15_12:00:00.png',
-'/assets/images/wrf/cp_wrfout_d01_2020-04-15_13:00:00.png',
-'/assets/images/wrf/cp_wrfout_d01_2020-04-15_14:00:00.png',];
+var img_array = [];
 function setImage(obj)
 {
         var value = obj.value;
