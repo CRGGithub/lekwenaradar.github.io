@@ -8,13 +8,43 @@ permalink: /wrfcape.html
 <p>Drag the slider to change the time</p>
 
 <div class="slidecontainer">
-<input oninput='setImage(this)' class="slider" type="range" min="0" max="0" value="0" step="1" />
+<input oninput='setImage(this)' class="slider" type="range" min="0" max="31" value="0" step="1" />
 <img id='img'/>
 </div>
 
 <script>
 var img = document.getElementById('img');
-var img_array = [];
+var img_array = ['/assets/images/wrf/cp_wrfout_d01_2020-04-22_12:00:00.png',
+'/assets/images/wrf/cp_wrfout_d01_2020-04-22_13:00:00.png',
+'/assets/images/wrf/cp_wrfout_d01_2020-04-22_14:00:00.png',
+'/assets/images/wrf/cp_wrfout_d01_2020-04-22_15:00:00.png',
+'/assets/images/wrf/cp_wrfout_d01_2020-04-22_16:00:00.png',
+'/assets/images/wrf/cp_wrfout_d01_2020-04-22_17:00:00.png',
+'/assets/images/wrf/cp_wrfout_d01_2020-04-22_18:00:00.png',
+'/assets/images/wrf/cp_wrfout_d01_2020-04-22_19:00:00.png',
+'/assets/images/wrf/cp_wrfout_d01_2020-04-22_20:00:00.png',
+'/assets/images/wrf/cp_wrfout_d01_2020-04-22_21:00:00.png',
+'/assets/images/wrf/cp_wrfout_d01_2020-04-22_22:00:00.png',
+'/assets/images/wrf/cp_wrfout_d01_2020-04-22_23:00:00.png',
+'/assets/images/wrf/cp_wrfout_d01_2020-04-23_00:00:00.png',
+'/assets/images/wrf/cp_wrfout_d01_2020-04-23_01:00:00.png',
+'/assets/images/wrf/cp_wrfout_d01_2020-04-23_02:00:00.png',
+'/assets/images/wrf/cp_wrfout_d01_2020-04-23_03:00:00.png',
+'/assets/images/wrf/cp_wrfout_d01_2020-04-23_04:00:00.png',
+'/assets/images/wrf/cp_wrfout_d01_2020-04-23_05:00:00.png',
+'/assets/images/wrf/cp_wrfout_d01_2020-04-23_06:00:00.png',
+'/assets/images/wrf/cp_wrfout_d01_2020-04-23_07:00:00.png',
+'/assets/images/wrf/cp_wrfout_d01_2020-04-23_08:00:00.png',
+'/assets/images/wrf/cp_wrfout_d01_2020-04-23_09:00:00.png',
+'/assets/images/wrf/cp_wrfout_d01_2020-04-23_10:00:00.png',
+'/assets/images/wrf/cp_wrfout_d01_2020-04-23_11:00:00.png',
+'/assets/images/wrf/cp_wrfout_d01_2020-04-23_12:00:00.png',
+'/assets/images/wrf/cp_wrfout_d01_2020-04-23_13:00:00.png',
+'/assets/images/wrf/cp_wrfout_d01_2020-04-23_14:00:00.png',
+'/assets/images/wrf/cp_wrfout_d01_2020-04-23_15:00:00.png',
+'/assets/images/wrf/cp_wrfout_d01_2020-04-23_16:00:00.png',
+'/assets/images/wrf/cp_wrfout_d01_2020-04-23_17:00:00.png',
+'/assets/images/wrf/cp_wrfout_d01_2020-04-23_18:00:00.png',];
 function setImage(obj)
 {
         var value = obj.value;
