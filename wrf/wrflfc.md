@@ -2,39 +2,17 @@
 <p>Drag the slider to change the time</p>
 
 <div class="slidecontainer">
-<input oninput='setImage(this)' class="slider" type="range" min="0" max="27" value="0" step="1" />
+<input oninput='setImage(this)' class="slider" type="range" min="0" max="5" value="0" step="1" />
 <img id='img'/>
 </div>
 
 <script>
 var img = document.getElementById('img');
-var img_array = ['/assets/images/wrf/lc_wrfout_d01_2020-04-26_12:00:00.png',
-'/assets/images/wrf/lc_wrfout_d01_2020-04-26_13:00:00.png',
-'/assets/images/wrf/lc_wrfout_d01_2020-04-26_14:00:00.png',
-'/assets/images/wrf/lc_wrfout_d01_2020-04-26_15:00:00.png',
-'/assets/images/wrf/lc_wrfout_d01_2020-04-26_16:00:00.png',
-'/assets/images/wrf/lc_wrfout_d01_2020-04-26_17:00:00.png',
-'/assets/images/wrf/lc_wrfout_d01_2020-04-26_18:00:00.png',
-'/assets/images/wrf/lc_wrfout_d01_2020-04-26_19:00:00.png',
-'/assets/images/wrf/lc_wrfout_d01_2020-04-26_20:00:00.png',
-'/assets/images/wrf/lc_wrfout_d01_2020-04-26_21:00:00.png',
-'/assets/images/wrf/lc_wrfout_d01_2020-04-26_22:00:00.png',
-'/assets/images/wrf/lc_wrfout_d01_2020-04-26_23:00:00.png',
-'/assets/images/wrf/lc_wrfout_d01_2020-04-27_00:00:00.png',
-'/assets/images/wrf/lc_wrfout_d01_2020-04-27_01:00:00.png',
-'/assets/images/wrf/lc_wrfout_d01_2020-04-27_02:00:00.png',
-'/assets/images/wrf/lc_wrfout_d01_2020-04-27_03:00:00.png',
-'/assets/images/wrf/lc_wrfout_d01_2020-04-27_04:00:00.png',
-'/assets/images/wrf/lc_wrfout_d01_2020-04-27_05:00:00.png',
-'/assets/images/wrf/lc_wrfout_d01_2020-04-27_06:00:00.png',
-'/assets/images/wrf/lc_wrfout_d01_2020-04-27_07:00:00.png',
-'/assets/images/wrf/lc_wrfout_d01_2020-04-27_08:00:00.png',
-'/assets/images/wrf/lc_wrfout_d01_2020-04-27_09:00:00.png',
-'/assets/images/wrf/lc_wrfout_d01_2020-04-27_10:00:00.png',
-'/assets/images/wrf/lc_wrfout_d01_2020-04-27_11:00:00.png',
-'/assets/images/wrf/lc_wrfout_d01_2020-04-27_12:00:00.png',
+var img_array = ['/assets/images/wrf/lc_wrfout_d01_2020-04-27_12:00:00.png',
 '/assets/images/wrf/lc_wrfout_d01_2020-04-27_13:00:00.png',
-'/assets/images/wrf/lc_wrfout_d01_2020-04-27_14:00:00.png',];
+'/assets/images/wrf/lc_wrfout_d01_2020-04-27_14:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-04-27_15:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-04-27_16:00:00.png',];
 function setImage(obj)
 {
         var value = obj.value;
