@@ -2,43 +2,49 @@
 <p>Drag the slider to change the time</p>
 
 <div class="slidecontainer">
-<input oninput='setImage(this)' class="slider" type="range" min="0" max="31" value="0" step="1" />
+<input oninput='setImage(this)' class="slider" type="range" min="0" max="37" value="0" step="1" />
 <img id='img'/>
 </div>
 
 <script>
 var img = document.getElementById('img');
-var img_array = ['/assets/images/wrf/cf_wrfout_d01_2020-06-19_12:00:00.png',
-'/assets/images/wrf/cf_wrfout_d01_2020-06-19_13:00:00.png',
-'/assets/images/wrf/cf_wrfout_d01_2020-06-19_14:00:00.png',
-'/assets/images/wrf/cf_wrfout_d01_2020-06-19_15:00:00.png',
-'/assets/images/wrf/cf_wrfout_d01_2020-06-19_16:00:00.png',
-'/assets/images/wrf/cf_wrfout_d01_2020-06-19_17:00:00.png',
-'/assets/images/wrf/cf_wrfout_d01_2020-06-19_18:00:00.png',
-'/assets/images/wrf/cf_wrfout_d01_2020-06-19_19:00:00.png',
-'/assets/images/wrf/cf_wrfout_d01_2020-06-19_20:00:00.png',
-'/assets/images/wrf/cf_wrfout_d01_2020-06-19_21:00:00.png',
-'/assets/images/wrf/cf_wrfout_d01_2020-06-19_22:00:00.png',
-'/assets/images/wrf/cf_wrfout_d01_2020-06-19_23:00:00.png',
-'/assets/images/wrf/cf_wrfout_d01_2020-06-20_00:00:00.png',
-'/assets/images/wrf/cf_wrfout_d01_2020-06-20_01:00:00.png',
-'/assets/images/wrf/cf_wrfout_d01_2020-06-20_02:00:00.png',
-'/assets/images/wrf/cf_wrfout_d01_2020-06-20_03:00:00.png',
-'/assets/images/wrf/cf_wrfout_d01_2020-06-20_04:00:00.png',
-'/assets/images/wrf/cf_wrfout_d01_2020-06-20_05:00:00.png',
-'/assets/images/wrf/cf_wrfout_d01_2020-06-20_06:00:00.png',
-'/assets/images/wrf/cf_wrfout_d01_2020-06-20_07:00:00.png',
-'/assets/images/wrf/cf_wrfout_d01_2020-06-20_08:00:00.png',
-'/assets/images/wrf/cf_wrfout_d01_2020-06-20_09:00:00.png',
-'/assets/images/wrf/cf_wrfout_d01_2020-06-20_10:00:00.png',
-'/assets/images/wrf/cf_wrfout_d01_2020-06-20_11:00:00.png',
-'/assets/images/wrf/cf_wrfout_d01_2020-06-20_12:00:00.png',
+var img_array = ['/assets/images/wrf/cf_wrfout_d01_2020-06-20_12:00:00.png',
 '/assets/images/wrf/cf_wrfout_d01_2020-06-20_13:00:00.png',
 '/assets/images/wrf/cf_wrfout_d01_2020-06-20_14:00:00.png',
 '/assets/images/wrf/cf_wrfout_d01_2020-06-20_15:00:00.png',
 '/assets/images/wrf/cf_wrfout_d01_2020-06-20_16:00:00.png',
 '/assets/images/wrf/cf_wrfout_d01_2020-06-20_17:00:00.png',
-'/assets/images/wrf/cf_wrfout_d01_2020-06-20_18:00:00.png',];
+'/assets/images/wrf/cf_wrfout_d01_2020-06-20_18:00:00.png',
+'/assets/images/wrf/cf_wrfout_d01_2020-06-20_19:00:00.png',
+'/assets/images/wrf/cf_wrfout_d01_2020-06-20_20:00:00.png',
+'/assets/images/wrf/cf_wrfout_d01_2020-06-20_21:00:00.png',
+'/assets/images/wrf/cf_wrfout_d01_2020-06-20_22:00:00.png',
+'/assets/images/wrf/cf_wrfout_d01_2020-06-20_23:00:00.png',
+'/assets/images/wrf/cf_wrfout_d01_2020-06-21_00:00:00.png',
+'/assets/images/wrf/cf_wrfout_d01_2020-06-21_01:00:00.png',
+'/assets/images/wrf/cf_wrfout_d01_2020-06-21_02:00:00.png',
+'/assets/images/wrf/cf_wrfout_d01_2020-06-21_03:00:00.png',
+'/assets/images/wrf/cf_wrfout_d01_2020-06-21_04:00:00.png',
+'/assets/images/wrf/cf_wrfout_d01_2020-06-21_05:00:00.png',
+'/assets/images/wrf/cf_wrfout_d01_2020-06-21_06:00:00.png',
+'/assets/images/wrf/cf_wrfout_d01_2020-06-21_07:00:00.png',
+'/assets/images/wrf/cf_wrfout_d01_2020-06-21_08:00:00.png',
+'/assets/images/wrf/cf_wrfout_d01_2020-06-21_09:00:00.png',
+'/assets/images/wrf/cf_wrfout_d01_2020-06-21_10:00:00.png',
+'/assets/images/wrf/cf_wrfout_d01_2020-06-21_11:00:00.png',
+'/assets/images/wrf/cf_wrfout_d01_2020-06-21_12:00:00.png',
+'/assets/images/wrf/cf_wrfout_d01_2020-06-21_13:00:00.png',
+'/assets/images/wrf/cf_wrfout_d01_2020-06-21_14:00:00.png',
+'/assets/images/wrf/cf_wrfout_d01_2020-06-21_15:00:00.png',
+'/assets/images/wrf/cf_wrfout_d01_2020-06-21_16:00:00.png',
+'/assets/images/wrf/cf_wrfout_d01_2020-06-21_17:00:00.png',
+'/assets/images/wrf/cf_wrfout_d01_2020-06-21_18:00:00.png',
+'/assets/images/wrf/cf_wrfout_d01_2020-06-21_19:00:00.png',
+'/assets/images/wrf/cf_wrfout_d01_2020-06-21_20:00:00.png',
+'/assets/images/wrf/cf_wrfout_d01_2020-06-21_21:00:00.png',
+'/assets/images/wrf/cf_wrfout_d01_2020-06-21_22:00:00.png',
+'/assets/images/wrf/cf_wrfout_d01_2020-06-21_23:00:00.png',
+'/assets/images/wrf/cf_wrfout_d01_2020-06-22_00:00:00.png',];
 function setImage(obj)
 {
         var value = obj.value;
