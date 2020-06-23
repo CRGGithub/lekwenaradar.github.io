@@ -2,13 +2,49 @@
 <p>Drag the slider to change the time</p>
 
 <div class="slidecontainer">
-<input oninput='setImage(this)' class="slider" type="range" min="0" max="0" value="0" step="1" />
+<input oninput='setImage(this)' class="slider" type="range" min="0" max="37" value="0" step="1" />
 <img id='img'/>
 </div>
 
 <script>
 var img = document.getElementById('img');
-var img_array = [];
+var img_array = ['/assets/images/wrf/lc_wrfout_d01_2020-06-23_12:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-23_13:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-23_14:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-23_15:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-23_16:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-23_17:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-23_18:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-23_19:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-23_20:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-23_21:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-23_22:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-23_23:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-24_00:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-24_01:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-24_02:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-24_03:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-24_04:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-24_05:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-24_06:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-24_07:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-24_08:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-24_09:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-24_10:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-24_11:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-24_12:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-24_13:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-24_14:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-24_15:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-24_16:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-24_17:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-24_18:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-24_19:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-24_20:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-24_21:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-24_22:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-24_23:00:00.png',
+'/assets/images/wrf/lc_wrfout_d01_2020-06-25_00:00:00.png',];
 function setImage(obj)
 {
         var value = obj.value;
