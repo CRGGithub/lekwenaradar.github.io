@@ -8,13 +8,13 @@
 
 <script>
 var img = document.getElementById('img');
-var img_array = ['/assets/images/skwt/skd_ghanzi_wrfout_d01_2020-06-23_12:00:00.png',
-'/assets/images/skwt/skd_ghanzi_wrfout_d01_2020-06-23_18:00:00.png',
-'/assets/images/skwt/skd_ghanzi_wrfout_d01_2020-06-24_00:00:00.png',
-'/assets/images/skwt/skd_ghanzi_wrfout_d01_2020-06-24_06:00:00.png',
-'/assets/images/skwt/skd_ghanzi_wrfout_d01_2020-06-24_12:00:00.png',
-'/assets/images/skwt/skd_ghanzi_wrfout_d01_2020-06-24_18:00:00.png',
-'/assets/images/skwt/skd_ghanzi_wrfout_d01_2020-06-25_00:00:00.png',];
+var img_array = ['/assets/images/skwt/skd_ghanzi_wrfout_d01_2020-06-25_12:00:00.png',
+'/assets/images/skwt/skd_ghanzi_wrfout_d01_2020-06-25_18:00:00.png',
+'/assets/images/skwt/skd_ghanzi_wrfout_d01_2020-06-26_00:00:00.png',
+'/assets/images/skwt/skd_ghanzi_wrfout_d01_2020-06-26_06:00:00.png',
+'/assets/images/skwt/skd_ghanzi_wrfout_d01_2020-06-26_12:00:00.png',
+'/assets/images/skwt/skd_ghanzi_wrfout_d01_2020-06-26_18:00:00.png',
+'/assets/images/skwt/skd_ghanzi_wrfout_d01_2020-06-27_00:00:00.png',];
 function setImage(obj)
 {
         var value = obj.value;
