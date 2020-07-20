@@ -8,7 +8,7 @@
 
 <script>
 var img = document.getElementById('img');
-var img_array = ['/assets/images/skwt/skd_mbabane_wrfout_d01_2020-07-19_12:00:00.png',];
+var img_array = ['/assets/images/skwt/skd_mbabane_wrfout_d01_2020-07-20_12:00:00.png',];
 function setImage(obj)
 {
         var value = obj.value;
