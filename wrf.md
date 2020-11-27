@@ -2,7 +2,7 @@
 layout: page
 title: NWU-WRF
 tagline: North-West University Operational WRF
-permalink: /wrf/wrf.html
+permalink: 143.160.8.22/wrf/wrf.html
 ---
 
 **The Weather Research and Forecasting Model Version (WRFV) 4.0**,
