@@ -4,7 +4,7 @@ tagline: A Living Weather Laboratory
 ---
 <meta http-equiv="refresh" content="120" >
 
-## New Developments: [The NWU-WRF: Online and Operational](http://www.lekwenaradar.co.za/http://143.160.8.22/wrf/wrf.html)
+## New Developments: [The NWU-WRF: Online and Operational](http://www.lekwenaradar.co.za/143.160.8.22/wrf/wrf.html)
 
 The Weather Research and Forecasting Model (WRF) is an advanced, community
 driven, and open source weather model that can be used for both operational
