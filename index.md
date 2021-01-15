@@ -47,9 +47,9 @@ The current UTC time is:
 </html>
 
 ---
-# Click on "layer" to open radar overlay.
+# Maximum dBZ
 
-Refresh your browser if the map box is missing
+Click on "layer" to open radar overlay or refresh your browser if the map box is missing
 
 <iframe style='height: 500pt; width: 100%;' frameborder="0" scrolling="no" id="iframe" src="http://143.160.8.22/leaflet.html"></iframe>
 
@@ -58,7 +58,7 @@ Refresh your browser if the map box is missing
 </p> 
 
 ---
-# Experimental maps: Interactive shapefile with storm characteristics
+# Shapefile with detailed storm characteristics
 
 Detailed storm characteristics availible by clicking on the red plygon, or the black storm track. Refresh your browser if the map box is missing.
 
