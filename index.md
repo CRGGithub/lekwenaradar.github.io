@@ -58,7 +58,13 @@ Refresh your browser if the map box is missing
 </p> 
 
 ---
+# Experimental maps: Interactive shapefile with storm characteristics
 
+Detailed storm characteristics availible by clicking on the red plygon, or the black storm track. Refresh your browser if the map box is missing.
+
+<iframe style='height: 500pt; width: 100%;' frameborder="0" scrolling="no" id="iframe" src="http://143.160.8.22/shpmap.html"></iframe>
+
+---
 # Static Image
 
 ![radar_image](http://143.160.8.22/latest.gif)
