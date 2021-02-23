@@ -1,6 +1,6 @@
 ---
 layout: page
-title: GFS Synoptic Analysis
+title: NWU-GFS
 tagline: Daily Synoptic Maps generated from GFS
 permalink: /gfsmaps.html
 ---
